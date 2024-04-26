@@ -1,0 +1,76 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "eslint:recommended",
+    "eslint-config-prettier",
+    "plugin:n/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended",
+    "plugin:css/recommended",
+    "plugin:promise/recommended",
+    "plugin:react-redux/recommended",
+    "plugin:testing-library/react"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "react-redux",
+    "prettier",
+    "css",
+    "testing-library",
+    "jsx-a11y",
+    "import",
+    "promise",
+    "vitest"
+  ],
+  "rules": {
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }],
+    "quotes": ["error", "single"],
+    "no-undef": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/function-component-definition": "off",
+    "react/prop-types": "error",
+    "react/react-in-jsx-scope": "off",
+    "css/color-hex-style": "off",
+    "css/no-shorthand-property-overrides": "off",
+    "css/named-color": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "n/no-missing-import": "off"
+  }
+}
+
+// add to your ESLint config definition
+// overrides: [
+//   {
+//     // feel free to replace with your preferred file pattern - eg. 'src/**/*Slice.ts'
+//     files: ['src/**/*.slice.ts'],
+//     // avoid state param assignment
+//     rules: { 'no-param-reassign': ['error', { props: false }] },
+//   }
+
+
+// ],
