@@ -15,6 +15,15 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@/src", "./src"],
+          ["@/component", "./src/component"]
+        ],
+        "extensions": [".js", ".jsx"]
+      }
     }
   },
   "extends": [
