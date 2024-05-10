@@ -12,6 +12,17 @@ export default defineConfig({
       failOnError: false,
     }),
   ],
+  resolve: {
+    alias: {
+      '@/src': '/src',
+      '@/components': '/src/components',
+    },
+  },
+  server: {
+    fs: {
+      cachedChecks: false,
+    },
+  },
   build: {
     rollupOptions: {
       output: {

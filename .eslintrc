@@ -20,7 +20,7 @@
       "alias": {
         "map": [
           ["@/src", "./src"],
-          ["@/component", "./src/component"]
+          ["@/components", "./src/components"]
         ],
         "extensions": [".js", ".jsx"]
       }
@@ -68,7 +68,8 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
-    "n/no-missing-import": "off"
+    "n/no-missing-import": "off",
+    "no-shadow": "off"
   },
   "overrides": [
     {
