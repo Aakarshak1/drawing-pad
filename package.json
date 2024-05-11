@@ -54,6 +54,7 @@
     "prettier": "^3.2.5",
     "prettier-plugin-css-order": "^2.1.2",
     "prop-types": "^15.8.1",
+    "remove-attr": "^0.0.13",
     "stylelint": "^16.3.1",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-order": "^6.0.4",
