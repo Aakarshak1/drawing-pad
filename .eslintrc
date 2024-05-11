@@ -69,7 +69,8 @@
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "n/no-missing-import": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "no-restricted-exports": ["error", { "restrictDefaultExports": { "defaultFrom": false } }]
   },
   "overrides": [
     {

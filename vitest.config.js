@@ -1,7 +1,27 @@
-//https://vitest.dev/config/
+// https://vitest.dev/config/
 import { defineConfig } from 'vitest/config';
+import eslint from 'vite-plugin-eslint';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  plugins: [
+    react(),
+    eslint({
+      failOnWarning: false,
+      failOnError: false,
+    }),
+  ],
+  resolve: {
+    alias: {
+      '@/src': '/src',
+      '@/components': '/src/components',
+    },
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      jsx: 'automatic',
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',
@@ -11,6 +31,9 @@ export default defineConfig({
       provider: 'v8',
       enabled: true,
       reporter: ['html'],
+    },
+    deps: {
+      inline: ['vitest-canvas-mock'],
     },
   },
 });

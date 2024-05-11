@@ -23,6 +23,11 @@ export default defineConfig({
       cachedChecks: false,
     },
   },
+  optimizeDeps: {
+    esbuildOptions: {
+      jsx: 'automatic',
+    },
+  },
   build: {
     rollupOptions: {
       output: {
