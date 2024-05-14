@@ -16,4 +16,6 @@ const MENU_ITEMS = {
   DOWNLOAD: 'DOWNLOAD',
 };
 
-export { COLORS, MENU_ITEMS };
+const ICON_COLOR = '#3D3D3D';
+
+export { COLORS, MENU_ITEMS, ICON_COLOR };
